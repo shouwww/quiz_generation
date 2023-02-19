@@ -9,6 +9,11 @@ pillow = "*"
 sphinx-rtd-theme = "*"
 sphinx-autobuild = "*"
 sphinxcontrib-plantuml = "*"
+streamlit = "*"
+requests = "*"
+beautifulsoup4 = "*"
+lxml = "*"
+jaconv = "*"
 
 [dev-packages]
 

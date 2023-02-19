@@ -1,0 +1,39 @@
+プログラム関連
+============================
+
+
+
+streamlit
+*********************
+
+StreamlitでGUIを作成する。
+
+
+StreamlitとgithubでGUIアプリを公開する方法
+----------------------------------------------
+
+githubにStreamlitを含んだプログラムをアップする。
+
+例) app.py
+
+.. code:: python
+
+    
+    import streamlit as st    
+    st.title("hello")
+
+
+Streamlit Sharingの設定
+---------------------------------
+
+Streamlit cloud(https://streamlit.io/cloud)のトップページ右上のSign Upから「Continue with GitHub」を押す。
+
+情報を適当に登録。
+
+ログインできたら右上 New app からアプリを登録します。
+
+Deploy app 画面から登録したいアプリのレポジトリ、ブランチ、メインファイルのパスを設定しDeployボタンを押す。
+
+クッキー画像が1,2分表示されるので、待つ。
+
+風船が上がれば完了。URLをコピーして開くと登録したアプリが見れるようになります。

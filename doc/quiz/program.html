@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>プログラム関連 &mdash; Docs  ドキュメント</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/translations.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Docs
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../sphinx/index.html">1. Sphinxの書き方を学ぶ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sphinx/index.html#indices-and-tables">2. Indices and tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">3. QuizGenerationについて</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#indices-and-tables">4. Indices and tables</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Docs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">プログラム関連</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/quiz/program.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>プログラム関連<a class="headerlink" href="#id1" title="この見出しへのパーマリンク">¶</a></h1>
+<section id="streamlit">
+<h2>streamlit<a class="headerlink" href="#streamlit" title="この見出しへのパーマリンク">¶</a></h2>
+<p>StreamlitでGUIを作成する。</p>
+<section id="streamlitgithubgui">
+<h3>StreamlitとgithubでGUIアプリを公開する方法<a class="headerlink" href="#streamlitgithubgui" title="この見出しへのパーマリンク">¶</a></h3>
+<p>githubにStreamlitを含んだプログラムをアップする。</p>
+<p>例) app.py</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">streamlit</span> <span class="k">as</span> <span class="nn">st</span>
+<span class="n">st</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="streamlit-sharing">
+<h3>Streamlit Sharingの設定<a class="headerlink" href="#streamlit-sharing" title="この見出しへのパーマリンク">¶</a></h3>
+<p>Streamlit cloud(<a class="reference external" href="https://streamlit.io/cloud">https://streamlit.io/cloud</a>)のトップページ右上のSign Upから「Continue with GitHub」を押す。</p>
+<p>情報を適当に登録。</p>
+<p>ログインできたら右上 New app からアプリを登録します。</p>
+<p>Deploy app 画面から登録したいアプリのレポジトリ、ブランチ、メインファイルのパスを設定しDeployボタンを押す。</p>
+<p>クッキー画像が1,2分表示されるので、待つ。</p>
+<p>風船が上がれば完了。URLをコピーして開くと登録したアプリが見れるようになります。</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, ShoheiKobata.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
