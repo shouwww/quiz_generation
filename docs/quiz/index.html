@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>プログラム関連 &mdash; Docs  ドキュメント</title>
+  <title>QuizGenerationについて &mdash; Docs  ドキュメント</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -20,7 +20,9 @@
         <script src="../_static/translations.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
-    <link rel="search" title="検索" href="../search.html" /> 
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="1. QuizGenerationの概要" href="overview.html" />
+    <link rel="prev" title="1.2. Markdown" href="../sphinx/markdown.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -43,11 +45,14 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../sphinx/index.html">1. Sphinxの書き方を学ぶ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../sphinx/index.html#indices-and-tables">2. Indices and tables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="index.html">3. QuizGenerationについて</a></li>
-<li class="toctree-l1"><a class="reference internal" href="index.html#indices-and-tables">4. Indices and tables</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">QuizGenerationについて</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="overview.html">1. QuizGenerationの概要</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
 </ul>
 
         </div>
@@ -64,9 +69,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">プログラム関連</li>
+      <li class="breadcrumb-item active">QuizGenerationについて</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/quiz/program.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/quiz/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -74,36 +79,34 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="id1">
-<h1>プログラム関連<a class="headerlink" href="#id1" title="この見出しへのパーマリンク">¶</a></h1>
-<section id="streamlit">
-<h2>streamlit<a class="headerlink" href="#streamlit" title="この見出しへのパーマリンク">¶</a></h2>
-<p>StreamlitでGUIを作成する。</p>
-<section id="streamlitgithubgui">
-<h3>StreamlitとgithubでGUIアプリを公開する方法<a class="headerlink" href="#streamlitgithubgui" title="この見出しへのパーマリンク">¶</a></h3>
-<p>githubにStreamlitを含んだプログラムをアップする。</p>
-<p>例) app.py</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">streamlit</span> <span class="k">as</span> <span class="nn">st</span>
-<span class="n">st</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">)</span>
-</pre></div>
+  <section id="quizgeneration">
+<h1>QuizGenerationについて<a class="headerlink" href="#quizgeneration" title="この見出しへのパーマリンク">¶</a></h1>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">1. QuizGenerationの概要</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#id1">1.1. 概要</a></li>
+</ul>
+</li>
+</ul>
 </div>
 </section>
-<section id="streamlit-sharing">
-<h3>Streamlit Sharingの設定<a class="headerlink" href="#streamlit-sharing" title="この見出しへのパーマリンク">¶</a></h3>
-<p>Streamlit cloud(<a class="reference external" href="https://streamlit.io/cloud">https://streamlit.io/cloud</a>)のトップページ右上のSign Upから「Continue with GitHub」を押す。</p>
-<p>情報を適当に登録。</p>
-<p>ログインできたら右上 New app からアプリを登録します。</p>
-<p>Deploy app 画面から登録したいアプリのレポジトリ、ブランチ、メインファイルのパスを設定しDeployボタンを押す。</p>
-<p>クッキー画像が1,2分表示されるので、待つ。</p>
-<p>風船が上がれば完了。URLをコピーして開くと登録したアプリが見れるようになります。</p>
-</section>
-</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="この見出しへのパーマリンク">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="../genindex.html"><span class="std std-ref">索引</span></a></p></li>
+<li><p><a class="reference internal" href="../py-modindex.html"><span class="std std-ref">モジュール索引</span></a></p></li>
+<li><p><a class="reference internal" href="../search.html"><span class="std std-ref">検索ページ</span></a></p></li>
+</ul>
 </section>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../sphinx/markdown.html" class="btn btn-neutral float-left" title="1.2. Markdown" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="overview.html" class="btn btn-neutral float-right" title="1. QuizGenerationの概要" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 
