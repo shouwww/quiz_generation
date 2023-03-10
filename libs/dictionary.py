@@ -31,6 +31,7 @@ class DictClass():
         self.vocabulary = []
         for dict_values in self.dict_koto_json_load.values():
             self.vocabulary.extend(dict_values)
+        # End for
     # End def
 
     def get_words(self, initial=''):
