@@ -8,7 +8,7 @@ import re
 class DisJointedKANJI():
 
     def __init__(self):
-        self.ttfontname = "C:\\Windows\\Fonts\\meiryob.ttc"
+        self.ttfontname = "meiryob.ttc"  #  "C:\\Windows\\Fonts\\meiryob.ttc"
         self.fontsize = 50
         self.CanvasLen = 600
         self.div = 3
