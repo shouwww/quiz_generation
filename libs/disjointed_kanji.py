@@ -36,7 +36,7 @@ class DisJointedKANJI():
         offset_x = (self.CanvasLen - bounding_box[2] - bounding_box[0]) // 2
         offset_y = (self.CanvasLen - bounding_box[3] - bounding_box[1]) // 2
         draw.text((offset_x, offset_y), moji, fill=self.textRGB, font=font)
-        img.save("image.png")
+        # img.save("image.png")
         im_list = []
         for xi in range(self.div):
             for yi in range(self.div):

@@ -39,7 +39,9 @@ with st.expander("ばらばら漢字クイズ", expanded=False):
         st.session_state.ims_a = ims[0]
     ans_user = st.text_input('回答')
     if st.button('答'):
-        if ans_user == st.session_state.str_q:
+        if len(ans_user) != 1:
+            st.text('回答はi文字にしてください')
+        elif ans_user == st.session_state.str_q:
             with img_aa:
                 st.header("Anser")
                 st.image(st.session_state.ims_a, use_column_width=True)
@@ -54,7 +56,7 @@ with st.expander("ばらばら漢字クイズ", expanded=False):
     with img_qq:
         st.header("Question")
         st.image(st.session_state.ims_q, use_column_width=True)
-    
+
 
 with st.expander("ばらばら漢字を作る", expanded=False):
     st.subheader("ばらばらにする漢字を入力してください。")
@@ -63,8 +65,11 @@ with st.expander("ばらばら漢字を作る", expanded=False):
     img_q, img_a = st.columns(2)
     with button_q:
         if st.button("表示"):
-            ims = st.session_state.djk.draw_str(user_input)
-            st.session_state.ims_q = ims[1]
+            if len(user_input) != 1:
+                st.text('回答はi文字にしてください')
+            else:
+                ims = st.session_state.djk.draw_str(user_input)
+                st.session_state.ims_q = ims[1]
     with button_a:
         if st.button('答え'):
             ims = st.session_state.djk.draw_str(user_input)
